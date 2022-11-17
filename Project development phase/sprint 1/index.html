@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skin Disease Detection</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/trial.css">
+        </head>
+        <body>
+            <div class="conatiner">
+            <header>
+                <a href="#" class="logo">Skin Disease Detection</a>
+                <ul>
+            <li><a href="{{url_for('index')}}"class="active">Home</a></li>
+            <li><a href="{{url_for('login')}}">Login</a></li>
+            <li><a href="{{ url_for('register')}}">Register</a></li>
+            
+            </ul>
+            </header>
+            <section>
+                <img src="../static/img/stars.gif" id="stars">
+                <img src="../static/img/moon.gif" id="moon">
+                <img src="../static/img/mountains_behind.gif" id="mountains_behind">
+
+                <h2 id="text1" style="top: 10px;"> </h2>
+                <a href="#sec" id="btn">About</a>
+                <img src="../static/img/mountains_front.gif" id="mountains_front"  >
+                
+            </section>
+            <div class="divi" >.</div>
+            <div class="sec" id="sec">              
+                                           <h2>Problem</h2>
+                        <br>
+                        <br>
+                        <!-- <video controls loop autoplay muted playsinline>
+                                     <source src="main.mp4"
+                                type="video/mp4">
+                        </video> -->
+                    </p>
+                   
+                    
+                      <h2>Solution</h2>
+                      <p> 
+                  <br><br>
+                      </p>
+                      <div class="align">
+                        <p class="l"></p> <img src="" class="two">
+                    
+                <br>
+            </div>
+            <br>
+            <div class="align">
+                <p class="j"></p>  <img src="" class="one"><br>
+            <br>
+        </div>
+        <br>
+        <div class="align">
+            <p class="l"></p>  <img src="" class="two"><br>
+        <br>
+    </div>
+    <br>
+    <div class="align">
+        <p class="j"></p>  <img src="" class="one"><br>
+    <br>
+</div>
+<br>
+<div class="align">
+    <p class="l"></p>  <img src="" class="two"><br>
+<br>
+</div>
+                    
+                  
+                <!-- <h2>Parallax Scrolling Effect</h2>
+                <p>
+!<br><br>
+                </p> -->
+            </div>
+            <script>
+                let stars = document.getElementById('stars');
+                let moon = document.getElementById('moon');
+                let mountains_behind = document.getElementById('mountains_behind');
+                let mountains_front = document.getElementById('mountains_front');
+                let btn = document.getElementById('btn');
+                let text1 = document.getElementById('text1');
+                let header= document.querySelector('header');
+
+                window.addEventListener('scroll',function(){
+                    let value = window.scrollY;
+                    stars.style.left = value *0.25 + 'px';
+                    // moon.style.top = value *1.05 + 'px';
+                    mountains_behind.style.top = value *0.5 + 'px';
+                    mountains_front.style.top = value * 0 + 'px';
+                    text1.style.marginRight=value*4+'px';
+                    text1.style.marginTop = value * 1.5 + 'px';
+                    btn.style.marginTop = value * 1.5 + 'px';
+                    header.style.top=value*0.5+'px';
+                })
+            </script>
+            </div>
+        </body>    
+        </html>  
