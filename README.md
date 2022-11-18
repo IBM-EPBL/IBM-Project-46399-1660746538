@@ -1,6 +1,8 @@
 # IBM-Project-46399-1660746538
 AI-based localization and classification of skin disease with erythema
 
+Team id PNT2022TMID34423
+
 Team Members
 
 Team lead 	        Aysha Farhana K	     (961819104023)
